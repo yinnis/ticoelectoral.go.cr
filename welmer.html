@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;/>
+    <title>Partido Acción Ciudadana</title>
+    <link rel="stylesheet" type="text/css" href="css/pac.css">
+    <link rel="stylesheet" type="text/css" href="css/welmer.css">
+</head>
+<body>
+
+    <div id="inicio">
+        <header id="segundo">
+            <div id="fotografia">
+                <img src="imagenes/PAC2.png">
+                <h1>Presidente</h1>
+            </div>
+
+            <img id="logopartido" src="imagenes/Bandera_de_Accion_Ciudadana.png">
+        </header>
+
+        <nav id="menu">
+            <div id="contenedor">
+                <a class="principal" href="index.html">Home</a>
+                <a class="principal" href="#">Partidos Políticos</a>
+                <a class="principal" href="#">Acerca de..</a>
+                <a class="principal last" href="#">Contáctenos</a>
+            </div>
+
+            <div id="date">
+
+            </div>
+
+            <script>
+                document.getElementById("date").innerHTML= new date().toDateString();
+            </script>
+        </nav>
+
+        <main id="principalcontent">
+
+            <div id="primarycontent">
+
+                 <!-- primary content start-->
+
+                 <article class="post">
+                    <div id="header">
+                        <h3>Partido Acción Ciudadana</h3>
+                    </div>
+
+                    <div id="content">
+                        <img src="imagenes/Bandera_de_Accion_Ciudadana.png" class="picA floatleft" alt="">
+                        <p>La libertad y la igualdad son valores que nos animan y guían en esta propuesta
+                            programática. Las libertades civiles e
+                            individuales cobran especial relevancia, tal
+                            es el caso de la libertad de prensa o de libre
+                            expresión, así como los derechos humanos
+                            universales relacionados con la diversidad
+                            y la interculturalidad. Ningún desarrollo
+                            humano puede ser contrario al libre
+                            desenvolvimiento de la individualidad
+                            en sociedad. En un país democrático
+                            como Costa Rica, debemos procurar que
+                            nuestras acciones y decisiones se ejecuten
+                            bajo los más altos estándares de libertad e
+                            igualdad procurando siempre el respeto de
+                            todos los derechos humanos.
+                        </p>
+                    </div>
+                 </article>
+
+                 <article id="post">
+                    <div id="line" style="text-align:center">
+                        <h3>Entrevista a Welmer Ramos</h3>
+                        <button onclick="playPause()">Reproducir/Pausar</button>
+                        <video id="video1" width="420" height="240" autoplay>
+                            <source src="video/Entrevista a Welmer Ramos.mp4" type="video/mp4">
+                            <source src="video/Entrevista a Welmer Ramos.mp4" type="video/webm">
+                            <source src="video/Entrevista a Welmer Ramos.mp4" type="video/ogg">
+                            Su navegador no soporta este formato de video
+                        </video>
+
+                        <script>
+                            var myVideo = document.getElementById("video1");
+                            function playPause() {
+                                if (myVideo.paused) 
+                                myVideo.play(); 
+                                else 
+                                myVideo.pause();
+                            }
+                        </script>
+                        <p>Video cortesía de <a href="https://www.youtube.com/watch?v=fmHZLVGYyrk" target="_blank">Trece Noticias</a></p>
+                    </div>
+                </article>
+
+                <article id="post">
+                    <div id="line1">
+                        <h3>¡Somos PAC y somos distintos!</h3>
+                        <audio controls>
+                            <source src="audio/Welmer_Ramos.mp3" type="audio/mp3">
+                            Tu explorador no soporta el audio
+                        </audio>
+                    </div>
+                </article>
+                <br>
+
+                <article id="post">
+                    <div id="line2">
+                        <h3>Biografía de Welmer Ramos</h3>
+                        <a id="a1" href="archivos/Biografía_Welmer_Ramos.pdf" download="Biografía_Welmer_Ramos">Descargar Biografía de Welmer Ramos</a>
+                    </div>
+                </article>
+                <br>
+                <br>
+                <article id="post">
+                    <div id="line3">
+                        <h3>Plan de Gobierno</h3>
+                        <a id="a2" href="archivos/Plan_PAC.pdf" download="Plan_PAC">Descargar Programa de Gobierno</a>
+                    </div>
+                </article>
+            </div>
+
+            <aside id="secondarycontent">
+                <h3>Plan</h3>
+                <div class="content">
+                    <img src="imagenes/Bandera_Partido_Acción_Ciudadana_Costa_Rica.png" class="picB" alt=""/>
+                </div>
+                <h3>Principales aspectos</h3>
+                <div class="linklist">
+                    <li class="first"><a href="#">Comentarios</a></li>
+                    <li>Ambiente y Energía</li>
+                    <li>Desarrollo social y Territorial</li>
+                    <li>Infraestructura y Transportes</li>
+                    <li>Derechos Humanos</li>
+                    <li>Reforma Estado</li>
+                    <li>Reforma Política</li>
+                    <li>Economía</li>
+                    <li>Seguridad</li>
+                    <li>Pobreza</li>
+                </div>
+
+                <br>
+
+                <h3>Información de referencia</h3>
+                  <div class="content">
+                     <ul class="linklist">
+                        <li><a href="https://www.tse.go.cr/fichas/candidaturas/P/p-PAC/501910924" target="_blank">Tribunal Electoral</a></li>
+                     </ul>
+                 </div>
+
+                  <!-- secondary content end -->
+
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <credit>&copy; Derechos Reservados &nbsp; Autor: Yerlin Amador López</credit>
+    <div id="date">Feb 7, 2023</div>
+    <script>
+        document.getElementById("date").innerHTML = new Date().toDateString()
+    </script>
+    </footer>
+    
+</body>
+
+</html>

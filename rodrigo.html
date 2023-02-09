@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Partido Progreso Social Democratico</title>
+        <meta name="description" content="Elecciones 2022" />
+        <meta name="author" content="Yerlin Amador López" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;/>
+        <link rel="stylesheet" type="text/css" href="css/rodrigo.css"/>
+        <link rel="stylesheet" type="text/css" href="css/psd.css"/>
+    </head>
+
+    <body>
+        <div id="inicio">
+            <header id="segundo">
+                <div id="fotografia">
+                    <img src="imagenes/PSD2.png">
+                    <h1>Presidente</h1>
+                </div>
+
+                <img id="logopartido" src="imagenes/banderapsd.png">
+            </header>
+
+            <nav id="menu">
+                <div id="contenedor">
+                    <a class="principal" href="index.html">Home</a>
+                    <a class="principal" href="#">Partidos Políticos</a>
+                    <a class="principal" href="#">Acerca de..</a>
+                    <a class="principal last" href="#">Contáctenos</a>
+                </div>
+
+                <div id="date">
+
+                </div>
+
+                <script>
+                    document.getElementById("date").innerHTML= new date().toDateString();
+                </script>
+            </nav>
+
+            <main id="principalcontent">
+                <div id="primarycontent">
+
+                    <!-- primary content start-->
+
+                    <article class="post">
+                        <div id="header">
+                            <h3>Partido Progreso Social Democrático</h3>
+                        </div>
+
+                        <div id="content">
+                            <img src="imagenes/banderapsd.png" class="picA floatleft" alt="" />
+                            <p>Nuestro principal objetivo es muy simple: queremos gobernar pensando en el bienestar público. 
+                                Es decir, fojar una Costa Rica mejor para todos y dejar un país próspero y con futuro. Y eso empieza
+                                por evaluat rigurosamente la labor de las instituciones y de los empleados públicos porque lo que no se mide,
+                                no se puede mejorar. Aprobaremos presupuestos, sí, pero también alcanzaremos objetivos, exigiremos resultados y cumpliremos metas.
+                                <br>
+                                Queremos gobernar con el ciudadano. Un costarricense empoderado que tendrá la posibilidad de moldear el futuro de su país a través 
+                                de referéndums, de proponer nuevas leyes y de calificar la calidad de los servicios con encuestas que identificarán a los buenos 
+                                funcionarios y que podrán en jaque a los menos eficientes.
+                                Permítannos demostrarle que Costa Rica no es un país pobre sino muy mal administrado. Nos proponemos corregir esto con experiencia y valentía.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article id="post">
+                        <div id="line" style="text-align:center">
+                            <h3>Análisis Político de cara a las elecciones presidenciales de 2022</h3>
+                            <button onclick="playPause()">Reproducir/Pausar</button>
+                            <video id="video1" width="420" height="240" autoplay>
+                                <source src="video/Zoom_Electoral.mp4" type="video/mp4">
+                                <source src="video/Zoom_Electoral.mp4" type="video/webm">
+                                <source src="video/Zoom_Electoral.mp4" type="video/ogg">
+                                Su navegador no soporta este formato de video
+                            </video>
+
+                            <script>
+                                var myVideo = document.getElementById("video1");
+                                function playPause() {
+                                    if (myVideo.paused) 
+                                    myVideo.play(); 
+                                    else 
+                                    myVideo.pause();
+                                }
+                            </script>
+                            <p>Video cortesía de <a href="https://www.youtube.com/watch?v=SiPBnFQJKDo" target="_blank">Zoom Electoral</a></p>
+                        </div>
+                    </article>
+                    
+                    <article id="post">
+                        <div id="line1">
+                            <h3>Costa Rica nos necesita a todos y a todas unidos de la mano</h3>
+                            <audio controls>
+                                <source src="audio/Rodrigo_Chaves.mp3" type="audio/mp3">
+                                Tu explorador no soporta el audio
+                            </audio>
+                        </div>
+                    </article>
+                    <br>
+                    
+                    <article id="post">
+                        <div id="line2">
+                            <h3>Biografía de Rodrigo Chaves</h3>
+                            <a id="a1" href="archivos/Biografía_Rodrigo-Chaves.pdf" download="Biografía_Rodrigo-Chaves">Descargar Biografía de Rodrigo Chaves</a>
+                        </div>
+                    </article>
+                    <br>
+                    <br>
+                    <article id="post">
+                        <div id="line3">
+                            <h3>Plan de Gobierno</h3>
+                            <a id="a2" href="archivos/Plan_PSD.pdf" download="Plan_PSD">Descargar Programa de Gobierno</a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside id="secondarycontent">
+                    <h3>Plan</h3>
+                    <div class="content">
+                        <img src="imagenes/planrodrigo.JPG" class="picB" alt=""/>
+                    </div>
+                    <h3>Principales aspectos</h3>
+                    <div class="linklist">
+                        <li class="first"><a href="#">Comentarios</a></li>
+                        <li>Ambiente y Energía</li>
+                        <li>Desarrollo social y Territorial</li>
+                        <li>Infraestructura y Transportes</li>
+                        <li>Derechos Humanos</li>
+                        <li>Reforma Estado</li>
+                        <li>Reforma Política</li>
+                        <li>Economía</li>
+                        <li>Seguridad</li>
+                        <li>Pobreza</li>
+                    </div>
+
+                    <br>
+
+                    <h3>Información de referencia</h3>
+                      <div class="content">
+                         <ul class="linklist">
+                            <li><a href="https://www.tse.go.cr/fichas/candidaturas/P/p-PSD/105600795" target="_blank">Tribunal Electoral</a></li>
+                         </ul>
+                     </div>
+
+                      <!-- secondary content end -->
+
+                </aside>
+
+            </main>
+
+        </div>
+
+        <footer id="footer">
+            <credit>&copy; Derechos Reservados &nbsp; Autor: Yerlin Amador López</credit>
+        <div id="date">Feb 7, 2023</div>
+        <script>
+            document.getElementById("date").innerHTML = new Date().toDateString()
+        </script>
+        </footer>
+        
+    </body>
+</html>

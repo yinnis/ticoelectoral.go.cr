@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;/>
+    <title>Partido Nueva República</title>
+    <link rel="stylesheet" type="text/css" href="css/pnr.css">
+    <link rel="stylesheet" type="text/css" href="css/fabricio.css">
+</head>
+
+<body>
+    
+    <div id="inicio">
+
+        <header id="segundo">
+            <div id="fotografia">
+                <img src="imagenes/PNR2.png">
+                <h1>Presidente</h1>
+            </div>
+
+            <img id="logopartido" src="imagenes/Bandera_Partido_Nueva_República_Costa_Rica.svg.png">
+        </header>
+
+        <nav id="menu">
+            <div id="contenedor">
+                <a class="principal" href="index.html">Home</a>
+                <a class="principal" href="#">Partidos Políticos</a>
+                <a class="principal" href="#">Acerca de..</a>
+                <a class="principal last" href="#">Contáctenos</a>
+            </div>
+
+            <div id="date">
+
+            </div>
+
+            <script>
+                document.getElementById("date").innerHTML= new date().toDateString();
+            </script>
+        </nav>
+
+        <main id="principalcontent">
+
+            <div id="primarycontent">
+                <!-- primary content start-->
+
+                <article class="post">
+                    <div id="header">
+                        <h3>Partido Nueva República</h3>
+                    </div>
+
+                    <div id="content">
+                        <img src="imagenes/Bandera_Partido_Nueva_República_Costa_Rica.svg.png" class="picA floatleft" alt="" />
+                        <p>La Nueva República a la que aspiramos no tiene empacho en reconocer su carácter
+                            innovador. Para enfrentar los retos de la complejidad y la disrupción en nuestras realidades
+                            sociales, deben pensarse soluciones igualmente disruptivas e innovadoras que puedan no
+                            solo dar cuenta de esos desafíos, sino, y lo que es más esencial, que puedan aprovechar
+                            estas circunstancias para crear las respuestas que el país necesita con el fin de dar saltos
+                            cualitativos en el desarrollo. La Nueva República que queremos no pretende únicamente
+                            sobrevivir en medio de un entorno tan incierto y complejo como el actual, sino que busca ir
+                            más allá de eso, en la incansable búsqueda del crecimiento cualitativo del desarrollo
+                            humano del país: la Nueva República que abrazamos aspira a alcanzar el estatus de nación
+                            desarrollada.
+                        </p>
+                    </div>
+                </article>
+
+                <article id="post">
+                    <div id="line" style="text-align:center">
+                        <h3>Entrevista a Fabricio Alvarado</h3>
+                        <button onclick="playPause()">Reproducir/Pausar</button>
+                        <video id="video1" width="420" height="240" autoplay>
+                            <source src="video/Entrevista con Fabricio Alvarado.mp4" type="video/mp4">
+                            <source src="video/Entrevista con Fabricio Alvarado.mp4" type="video/webm">
+                            <source src="video/Entrevista con Fabricio Alvarado.mp4" type="video/ogg">
+                            Su navegador no soporta este formato de video
+                        </video>
+
+                        <script>
+                            var myVideo = document.getElementById("video1");
+                            function playPause() {
+                                if (myVideo.paused) 
+                                myVideo.play(); 
+                                else 
+                                myVideo.pause();
+                            }
+                        </script>
+                        <p>Video cortesía de <a href="https://www.youtube.com/watch?v=sPD11RE7Gck" target="_blank">CFIA Costa Rica</a></p>
+                    </div>
+                </article>
+
+                <article id="post">
+                    <div id="line1">
+                        <h3>Campaña Electoral 2022</h3>
+                        <audio controls>
+                            <source src="audio/Fabricio_Alvarado.mp3" type="audio/mp3">
+                            Tu explorador no soporta el audio
+                        </audio>
+                    </div>
+                </article>
+                <br>
+                <article id="post">
+                    <div id="line2">
+                        <h3>Biografía de Fabricio Alvarado</h3>
+                        <a id="a1" href="archivos/Biografía_Fabricio_Alvarado.pdf" download="Biografía_Fabricio_Alvarado">Descargar Biografía de Fabricio Alvarado</a>
+                    </div>
+                </article>
+                
+                <br>
+                <article id="post">
+                    <div id="line3">
+                        <h3>Plan de Gobierno</h3>
+                        <a id="a2" href="archivos/Plan_PNR.pdf" download="Plan_PNR">Descargar Programa de Gobierno</a>
+                    </div>
+                </article>
+            </div>
+
+            <aside id="secondarycontent">
+                <h3>Plan</h3>
+                <div class="content">
+                    <img src="imagenes/planfabricio.JPG" class="picB" alt=""/>
+                </div>
+                <h3>Principales aspectos</h3>
+                <div class="linklist">
+                    <li class="first"><a href="#">Comentarios</a></li>
+                    <li>Ambiente y Energía</li>
+                    <li>Desarrollo social y Territorial</li>
+                    <li>Infraestructura y Transportes</li>
+                    <li>Derechos Humanos</li>
+                    <li>Reforma Estado</li>
+                    <li>Reforma Política</li>
+                    <li>Economía</li>
+                    <li>Seguridad</li>
+                    <li>Pobreza</li>
+                </div>
+
+                <br>
+
+                <h3>Información de referencia</h3>
+                  <div class="content">
+                     <ul class="linklist">
+                        <li><a href="https://www.tse.go.cr/fichas/candidaturas/P/p-PNR/108820284" target="_blank">Tribunal Electoral</a></li>
+                     </ul>
+                 </div>
+
+                  <!-- secondary content end -->
+
+        </main>
+
+    </div>
+
+    <footer id="footer">
+        <credit>&copy; Derechos Reservados &nbsp; Autor: Yerlin Amador López</credit>
+    <div id="date">Feb 7, 2023</div>
+    <script>
+        document.getElementById("date").innerHTML = new Date().toDateString()
+    </script>
+    </footer>
+
+</body>
+
+</html>

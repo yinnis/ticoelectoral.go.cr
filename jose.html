@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;/>
+    <title>Partido Liberación Nacional</title>
+    <link rel="stylesheet" type="text/css" href="css/figueres.css">
+    <link rel="stylesheet" type="text/css" href="css/pln.css">
+</head>
+
+<body>
+    <div id="inicio">
+        <header id="segundo">
+            <div id="fotografia">
+                <img src="imagenes/PLN2.png">
+                <h1>Presidente</h1>
+                
+            </div>
+            <img id="logopartido" src="imagenes/Bandera_de_Partido_Liberación_Nacional.svg.png" alt="">
+        </header>
+
+        <nav id="menu">
+            <div id="contenedor">
+                <a class="principal" href="index.html">Home</a>
+                <a class="principal" href="#">Partidos Políticos</a>
+                <a class="principal" href="#">Acerca de..</a>
+                <a class="principal last" href="#">Contáctenos</a>
+            </div>
+
+            <div id="date">
+
+            </div>
+
+            <script>
+                document.getElementById("date").innerHTML= new date().toDateString();
+            </script>
+        </nav>
+
+        <main id="principalcontent">
+            <!-- primary content start-->
+            <div id="primarycontent">
+                <article class="post">
+                    <div id="header">
+                        <h3>Partido Liberación Nacional</h3>
+                    </div>
+    
+                    <div id="content">
+                        <img src="imagenes/liberacionlogo.png" class="picA floatleft" alt="" />
+                        <p>Agradezco a los cientos de personas que contribuyeron de forma generosa y entusiasta a la construcción de 
+                        esta propuesta. Una iniciativa que nació hace diez años, cuando propusimos
+                        la Vía Costarricense hacia un nuevo Proyecto-País. Las ideas que brotaron de ese proceso
+                        se pulieron y ampliaron en un ejercicio participativo durante los últimos seis meses. Con el
+                        concurso de más de 500 personas, decenas de grupos de trabajo y más de 1500 aportes
+                        recibidos en la primera consulta virtual en junio de este año, se elaboró un documento
+                        vivo que continuará enriqueciéndose, hasta convertirse en nuestra ruta para el rescate y la
+                        transformación de Costa Rica, que arrancará el 8 de mayo de 2022.
+                        </p>
+                    </div>
+                </article>
+    
+                <article id="post">
+                    <div id="line" style="text-align:center">
+                        <h3>Análisis Político de cara a las elecciones presidenciales de 2022</h3>
+                        <button onclick="playPause()">Reproducir/Pausar</button>
+                        <video id="video1" width="420" height="240" autoplay>
+                            <source src="video/Zoom_Electoral_José_Figueres.mp4" type="video/mp4">
+                            <source src="video/Zoom_Electoral_José_Figueres.mp4" type="video/webm">
+                            <source src="video/Zoom_Electoral_José_Figueres.mp4" type="video/ogg">
+                            Su navegador no soporta este formato de video
+                        </video>
+    
+                        <script>
+                            var myVideo = document.getElementById("video1");
+                            function playPause() {
+                                if (myVideo.paused) 
+                                myVideo.play(); 
+                                else 
+                                myVideo.pause();
+                            }
+                        </script>
+                        <p>Video cortesía de <a href="https://www.youtube.com/watch?v=AJPxToseLNA&list=PLq-ktFywh1aC0VK1XOkpv6ioD_GZ1qDQX&index=3" target="_blank">Zoom Electoral</a></p>
+    
+                    </div>
+                </article>
+                
+                <article id="post">
+                    <div id="line1">
+                        <h3>Discurso de José María Figueres</h3>
+                        <audio controls>
+                            <source src="audio/José_Figueres.mp3" type="audio/mp3">
+                            Tu explorador no soporta el audio
+                        </audio>
+                    </div>
+                </article>
+                
+                <br>
+                
+                <article id="post">
+                    <div id="line2">
+                        <h3>Biografía de José M. Figueres</h3>
+                        <a id="a1" href="archivos/Biografía_José.M_Figueres.pdf" download="Biografía_José.M_Figueres">Descargar Biografía de José M. Figueres</a>
+                    </div>
+                </article>
+                <br>
+                <br>
+                <article id="post">
+                    <div id="line3">
+                        <h3>Plan de Gobierno</h3>
+                        <a id="a2" href="archivos/Plan_PLN.pdf" download="Plan_PLN">Descargar Programa de Gobierno</a>
+                    </div>
+                </article>
+            </div>
+
+            <aside id="secondarycontent">
+                <h3>Plan</h3>
+                <div class="content">
+                    <img src="imagenes/planfigueres.JPG" class="picB" alt=""/>
+                </div>
+
+                <h3>Principales aspectos</h3>
+                <div class="linklist">
+                    <li class="first"><a href="#">Comentarios</a></li>
+                    <li>Ambiente y Energía</li>
+                    <li>Desarrollo social y Territorial</li>
+                    <li>Infraestructura y Transportes</li>
+                    <li>Derechos Humanos</li>
+                    <li>Reforma Estado</li>
+                    <li>Reforma Política</li>
+                    <li>Economía</li>
+                    <li>Seguridad</li>
+                    <li>Pobreza</li>
+                </div>
+
+                <br>
+
+                <h3>Información de referencia</h3>
+                      <div class="content">
+                         <ul class="linklist">
+                            <li><a href="https://www.tse.go.cr/fichas/candidaturas/P/p-PLN/104790979" target="_blank">Tribunal Electoral</a></li>
+                         </ul>
+                     </div>
+
+                      <!-- secondary content end -->
+            </aside>
+
+        </main>
+    </div>
+
+    <footer id="footer">
+        <credit>&copy; Derechos Reservados &nbsp; Autor: Yerlin Amador López</credit>
+    <div id="date">Feb 7, 2023</div>
+    <script>
+        document.getElementById("date").innerHTML = new Date().toDateString()
+    </script>
+    </footer>
+
+</body>
+
+</html>
