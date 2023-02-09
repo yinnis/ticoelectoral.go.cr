@@ -1,0 +1,32 @@
+#menu{
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: #052923;
+}
+#contenedor .principal{
+    float: left;
+    color: white;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+}
+
+#contenedor a:hover{
+    font-size: larger;
+    font-weight: bold;
+    background-color: #9aa39d;
+}
+
+#contenedor a.last{
+    border-right: 0px;
+}
+#date{
+    line-height: 38px;
+    color: #bdbda2;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: -1px;
+    float: right ;
+}

@@ -1,0 +1,192 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #f9f9f7 url('../imagenes/a1.gif') repeat-x;
+    font-size: 12px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #070707;
+    line-height: 18px;
+}
+
+a{
+    color: #158324;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+sup{
+    font-size: 0.5em;
+}
+
+p{
+    margin-bottom: 14px;
+    text-align: justify;
+
+}
+img.picA{
+    position: relative;
+    top: -2px;
+    width: 105px;
+    height: 105px;
+    padding: 8px;
+}
+img.picB{
+    position: relative;
+    top: -2x;
+    width: 170px;
+    height: 170px;
+    padding: 15px;
+}
+
+img.floatleft{
+    float: left;
+    margin: 0px 14px 3px 0px;
+
+}
+
+#inicio{
+    position: relative;
+    width: 60%;
+    margin-top: 10px;
+    background: #fff;
+    border: initial;
+    overflow: overlay;
+    margin: 0px auto;
+}
+
+#segundo{
+    max-width: 100%;
+    height: 270px;
+}
+
+#segundo #logopartido{
+    float: left;
+    width: 67%;
+    max-width: 100%;
+    height: 270px;
+}
+
+#segundo #fotografia{
+    float: left;
+    width: 33%;
+    background: #eefaf2;
+    color: #111010;
+    text-align: center;
+    height: 270px;
+    padding-top: 9px;
+}
+
+#segundo #fotografia span{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#segundo #fotografia #span h1{
+    font-weight: normal;
+    font-size: 10px;
+    letter-spacing: -1;
+}
+
+#pricipalcontent{
+    width: 100%;
+    background-color: white;
+
+}
+
+
+#secondarycontent{
+    width: 25%;
+    float: right;
+}
+
+#secondarycontent h3{
+    font-size: 16px;
+    line-height: 25px;
+    color: #656551;
+    letter-spacing: -1;
+    background: url('../imagenes/a22.gif') bottom repeat-x;
+    padding: 0px 0px 10px 10px;
+    margin-bottom: 20px;
+}
+
+#secondarycontent .content{
+    
+    padding: 0px 10px 0px 10px;
+    margin-bottom: 20px;
+}
+
+
+#primarycontent{
+    float: left;
+    width: 74%;
+    margin-right: 3px;
+}
+
+#primarycontent h3{
+    font-size: 18px;
+    line-height: 25px;
+    color: #656551;
+    letter-spacing: -1;
+    background: url('../imagenes/a22.gif') bottom repeat-x;
+    padding: 0px 0px 10px 15px;
+    margin-bottom: 20px;
+}
+#primarycontent .post{
+    margin-bottom: 30px;
+}
+
+#primarycontent .post .content{
+    margin-bottom: 20px;
+    padding: 0px;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+#primarycontent .post .content .footer{
+    background: url('../imagenes/a33.gif') repeat-x;
+    height: 34px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+#primarycontent .post .content .footer ul{
+    list-style: none;
+}
+
+#primarycontent .post .content .footer ul li{
+    display: inline;
+    line-height: 14px;
+    padding-left: 17px;
+    margin-left: 25px;
+    background-repeat: no-repeat;
+    background-position: 0px 2px;
+}
+
+#primarycontent .post .content .footer ul li .readmore{
+    background-image: url('../imagenes/a38.gif');
+}
+
+#footer{
+    border-top: double;
+    clear: both;
+    height: 66px;
+    text-align: center;
+    color: #a8a88d;
+    padding-top: 15px;
+    background-image: url('../images/a1.gif');
+    background: repeat-x;
+}
+
+#primarycontent #post p{
+    text-align: center;
+}
+
+#primarycontent #post h3{
+    text-align: justify;
+}
